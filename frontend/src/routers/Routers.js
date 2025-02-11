@@ -20,6 +20,7 @@ import StudentDashboard from "../pages/StudentDashboard";
 import { StudentLogin } from "../pages/StudentLogin";
 import AddNewJob from "../pages/Addnewjob";
 import { ClientLogin } from "../pages/ClientLogin";
+import ViewAppliedJobs from "../pages/ViewAppliedJobs";
 
 const Routers = () => {
   return (
@@ -29,10 +30,10 @@ const Routers = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/jobs" element={<JobListing />} />
-        <Route path="/cars/:slug" element={<JobDetails />} />
+        <Route path="/jobs/:slug" element={<JobDetails />} />
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/login" element={<Login />} />
-        <Route path="/customerLogin" element={<StudentLogin />} />
+        <Route path="/studentLogin" element={<StudentLogin />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/clientLogin" element={<ClientLogin />} />
         <Route path="/register" element={<RegistrationForm />} />
@@ -44,6 +45,7 @@ const Routers = () => {
         <Route path="/logout" element={<Logout />} />
         <Route path="/studentDashboard" element={<StudentDashboard />} />
         <Route path="/EmployeeLogin" element={<EmployeeLogin />} />
+        <Route path="/viewAppliedJobs" element={<ViewAppliedJobs />} />
       </Routes>
    
   );

@@ -2,22 +2,20 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
-import CarItem from "../components/UI/JobItem";
-import carData from "../assets/data/jobData";
-import { Link } from "react-router-dom";
+import JobItem from "../components/UI/JobItem"; // ✅ Fixed incorrect import (capitalization)
+import jData from "../assets/data/jobData";
+
 
 const JobListing = () => {
   return (
-    <Helmet title="Cars">
+    <Helmet title="jobs">
       <CommonSection title="Jobs Listing" />
 
       <section>
         <Container>
           <Row>
-           
-
-            {carData.map((item) => (
-              <CarItem item={item} key={item.id} />
+            {jData.map((item) => (
+              <JobItem item={item} key={item.id} />
             ))}
           </Row>
         </Container>

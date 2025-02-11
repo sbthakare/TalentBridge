@@ -27,7 +27,7 @@ const HeroSlider = () => {
             <h5 className="text-light mb-4"> Apply now and take the next step in your career journey.</h5>
 
             <button className="btn reserve__btn mt-4">
-              <Link to="/cars">Apply Now</Link>
+              <Link to="/studentLogin">Apply Now</Link>
             </button>
           </div>
         </Container>
@@ -41,7 +41,7 @@ const HeroSlider = () => {
             <h5 className="text-light mb-4"> Apply now and take the next step in your career journey.</h5>
 
             <button className="btn reserve__btn mt-4">
-              <Link to="/cars">Apply Now</Link>
+              <Link to="/studentLogin">Apply Now</Link>
             </button>
           </div>
         </Container>
@@ -55,7 +55,7 @@ const HeroSlider = () => {
             <h5 className="text-light mb-4"> Apply now and take the next step in your career journey.</h5>
 
             <button className="btn reserve__btn mt-4">
-              <Link to="/cars">Apply Now</Link>
+              <Link to="/studentLogin">Apply Now</Link>
             </button>
           </div>
         </Container>

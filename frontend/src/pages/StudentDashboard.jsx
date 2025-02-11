@@ -4,43 +4,44 @@ import axios from 'axios';
 import "../styles/userDashboard.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export function CustomerDashboard() {
-  const [user, setUser] = useState({ name: 'Guest' });
+export function StudentDashboard() {
+  const [user, setUser] = useState(null); 
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const username = localStorage.getItem('username');
-        if (username) {
-          const response = await axios.get(`http://localhost:7350/user/getbyName/${username}`);
-          console.log('User profile data:', response.data); // Log the response data to check
-          setUser(response.data);
-        } else {
+        const username = localStorage.getItem('username'); 
+        if (!username) {
           console.error('Username not found in localStorage');
+          navigate('/login'); 
         }
+
+        const response = await axios.get(`http://localhost:7202/api/auth/get/${username}`);
+        console.log('User profile data:', response.data); 
+        setUser(response.data);
       } catch (error) {
         console.error('Error fetching user profile:', error);
+        navigate('/login'); 
       }
     };
 
-
     fetchUserProfile();
-  }, []);
+  }, [navigate]); 
 
   const handleLogout = () => {
-    localStorage.removeItem('user');
-    localStorage.removeItem('username');
-    navigate('/login');
+    localStorage.removeItem('username'); 
   };
+
+  if (!user) {
+    return <div className="loading">Loading...</div>; 
+  }
 
   return (
     <div className="dashboard">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            {/* Optionally add some other content or leave it empty */}
-          </a>
+          <a className="navbar-brand" href="#">TalentBridge</a>
           <button
             className="navbar-toggler"
             type="button"
@@ -55,17 +56,17 @@ export function CustomerDashboard() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/userProfile">
-                  Profile
+                <Link className="nav-link" to="/jobs">
+                 <b>ViewJobs</b> 
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/cars">
-                  View jobs
+                <Link className="nav-link" to="/viewAppliedJobs">
+                ViewAppliedJobs
                 </Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link btn btn-link" onClick={handleLogout}>
+                <button className="nav-link btn btn-danger btn-link" onClick={handleLogout}>
                   Logout
                 </button>
               </li>
@@ -74,19 +75,19 @@ export function CustomerDashboard() {
         </div>
       </nav>
       <div className="container">
-        <h1 className="welcome-message">Welcome, {user.name}!</h1>
+        <h1 className="welcome-message">Welcome, {user.firstName || user.userName}!</h1>
         <p className="description">
-          You are now logged in. You can view jobs or Applied a job now.
+          You are now logged in. You can browse jobs or check applied jobs.
         </p>
         <button
-          className="btn btn-primary view-cars-btn"
-          onClick={() => navigate('/cars')}
+          className="btn btn-primary"
+          onClick={() => navigate('/userProfile')}
         >
-          View Applied jobs
+          Profile
         </button>
       </div>
     </div>
   );
 }
 
-export default CustomerDashboard;
+export default StudentDashboard;

@@ -41,7 +41,7 @@ const Footer = () => {
             <div className="logo footer__logo">
               <h1>
                 <Link to="/home" className=" d-flex align-items-center gap-2">
-                  <i class="ri-car-line"></i>
+                  <i class="ri-user-search-line"></i>
                   <span>
                     Paarsh Infotech <br /> Services
                   </span>
