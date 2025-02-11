@@ -29,10 +29,10 @@ export const Login = () => {
       </div>
 
       <div className="login-buttons d-flex justify-content-around">
-        <button className="customer-login  btn-lg rounded-pill shadow-sm" onClick={handleStudentLogin}>Student Login</button> <br />
-        <button className="admin-login btn-lg rounded-pill shadow-sm" onClick={handleAdminLogin}>Admin Login</button> <br></br>
-        <button className="agent-login btn-lg rounded-pill shadow-sm" onClick={handleEmployeeLogin}>Employee Login</button>
-        <button className="client-login btn-lg rounded-pill shadow-sm" onClick={handleClientLogin}>Client Login</button>
+        <button className="customer-login  btn-lg  shadow-sm" onClick={handleStudentLogin}>Student Login</button> <br />
+        <button className="admin-login btn-lg rounded-pill" onClick={handleAdminLogin}>Admin Login</button> <br></br>
+        <button className="agent-login btn-lg rounded-pill " onClick={handleEmployeeLogin}>Employee Login</button>
+        <button className="client-login btn-lg rounded-pill " onClick={handleClientLogin}>Client Login</button>
       </div>
     </div>
   )

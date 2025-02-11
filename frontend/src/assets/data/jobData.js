@@ -12,7 +12,7 @@ const jobData = [
   {
     id: 1,
     title: "Software Engineer Intern",
-    salary: "₹15,000/month",
+    salary: "15,000 ",
     jobType: "Internship",
     noOfPositions: "5",
     jobDescription: "Work on full-stack web development projects, collaborate with teams, and enhance coding skills.",
@@ -24,7 +24,7 @@ const jobData = [
   {
     id: 2,
     title: "Frontend Developer",
-    salary: "₹6 LPA",
+    salary: "6 LPA",
     jobType: "Full Time",
     noOfPositions: "3",
     jobDescription: "Develop responsive UI components using React and ensure cross-browser compatibility.",
@@ -36,7 +36,7 @@ const jobData = [
   {
     id: 3,
     title: "Data Analyst",
-    salary: "₹8 LPA",
+    salary: "8 LPA",
     jobType: "Full Time",
     noOfPositions: "2",
     jobDescription: "Analyze business data, generate reports, and provide insights for decision-making.",
@@ -48,7 +48,7 @@ const jobData = [
   {
     id: 4,
     title: "Backend Developer",
-    salary: "₹7 LPA",
+    salary: "7 LPA",
     jobType: "Full Time",
     noOfPositions: "4",
     jobDescription: "Build scalable APIs and optimize backend services using Node.js and databases.",
@@ -60,7 +60,7 @@ const jobData = [
   {
     id: 5,
     title: "Project Manager",
-    salary: "₹12 LPA",
+    salary: "12 LPA",
     jobType: "Full Time",
     noOfPositions: "1",
     jobDescription: "Oversee projects, manage timelines, and coordinate with multiple teams.",
@@ -72,7 +72,7 @@ const jobData = [
   {
     id: 6,
     title: "UI/UX Designer",
-    salary: "₹8.5 LPA",
+    salary: "8.5 LPA",
     jobType: "Full Time",
     noOfPositions: "2",
     jobDescription: "Design user interfaces and enhance user experience for web applications.",
@@ -84,7 +84,7 @@ const jobData = [
   {
     id: 7,
     title: "HR Manager",
-    salary: "₹9 LPA",
+    salary: "9 LPA",
     jobType: "Full Time",
     noOfPositions: "1",
     jobDescription: "Manage recruitment, employee relations, and organizational development.",
@@ -96,7 +96,7 @@ const jobData = [
   {
     id: 8,
     title: "Systems Architect",
-    salary: "₹15 LPA",
+    salary: "15 LPA",
     jobType: "Full Time",
     noOfPositions: "2",
     jobDescription: "Design and oversee the architecture of large-scale systems and applications.",

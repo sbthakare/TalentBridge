@@ -37,7 +37,7 @@ export const AdminLogin = () => {
 
         // Delay navigation to ensure toast message is visible
         setTimeout(() => {
-          navigate('/adminDashboard');
+          navigate('/admindashboard');
         }, 1500);
       } else {
         toast.warning("You are not authorized as an admin", { className: 'custom-toast-warning' });

@@ -1,93 +1,101 @@
-.job__item {
-  border: 1px solid #7c8a9736;
-  padding: 20px;
-  border-radius:10px;
+.job__card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  padding: 15px;
+  background: white;
+  text-align: center;
+}
+
+.job__card:hover {
+  transform: scale(1.02);
+}
+
+.job__img {
+  text-align: center;
+  height: 120px; /* Reduced from 180px */
+  width: 10%;
+  border-radius: 8px;
+}
+
+.job__title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.job__salary {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #27ae60;
+}
+
+.job__item-info span {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 5px 0;
 }
 
 .job__item-info span i {
   color: #f9a826;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
-.job__item-btn {
-  border-radius: 0;
-  border: none;
-  outline: none;
-  background: #000d6b;
-  padding: 8px 0px;
+.job__buttons {
+  display: flex;
+  gap: 10px;
 }
 
-.job__item-btn a {
+.job__btn {
+  width: 48%;
+  border-radius: 5px;
+  padding: 8px 0;
+}
+
+.job__btn-link {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-weight: 500;
 }
 
-.job__item-btn a:hover {
-  color: #fff;
-}
-.job__btn-details {
-  background: #f9a826;
-  border-radius: 0px 4px 4px 0px;
+.job__btn:hover .job__btn-link {
+  color: white;
 }
 
-.job__btn-rent {
-  border-radius: 4px 0px 0px 4px;
-}
-
-.job__item-content h4 {
-  font-size: 1.8rem;
-}
-
-.job__item-content h6 {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
+/* Responsive Adjustments */
 @media only screen and (max-width: 992px) {
-  .job__item h4 {
+  .job__title {
+    font-size: 1.4rem;
+  }
+
+  .job__salary {
     font-size: 1.1rem;
-    margin-bottom: 0;
-  }
-
-  .job__item h6 {
-    font-size: 1rem;
-    margin-top: 10px;
-  }
-
-  .job__item-info {
-    flex-wrap: wrap;
   }
 
   .job__item-info span {
-    font-size: 0.8rem;
-    justify-content: space-between;
-  }
-
-  .job__item-btn {
-    padding: 5px 10px;
     font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .job__item h4 {
+  .job__title {
+    font-size: 1.2rem;
+  }
+
+  .job__salary {
     font-size: 1rem;
   }
 
-  .job__item h6 {
-    font-size: 0.9rem;
-  }
-
   .job__item-info span {
-    font-size: 0.7rem;
-  }
-
-  .job__item-info span i {
-    font-size: 0.9rem;
-  }
-
-  .job__item-btn {
     font-size: 0.8rem;
   }
+
+  .job__btn {
+    font-size: 0.9rem;
+  }
 }
+

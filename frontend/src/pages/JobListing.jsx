@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
-import JobItem from "../components/UI/JobItem"; // ✅ Fixed incorrect import (capitalization)
+import JobItem from "../components/UI/JobItem"; 
 import jData from "../assets/data/jobData";
 
 

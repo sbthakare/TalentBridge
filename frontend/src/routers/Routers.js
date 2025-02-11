@@ -21,6 +21,8 @@ import { StudentLogin } from "../pages/StudentLogin";
 import AddNewJob from "../pages/Addnewjob";
 import { ClientLogin } from "../pages/ClientLogin";
 import ViewAppliedJobs from "../pages/ViewAppliedJobs";
+import JobAlert from "../pages/JobAlert";
+import AdminDashboard from "../pages/AdminDashboard";
 
 const Routers = () => {
   return (
@@ -46,6 +48,8 @@ const Routers = () => {
         <Route path="/studentDashboard" element={<StudentDashboard />} />
         <Route path="/EmployeeLogin" element={<EmployeeLogin />} />
         <Route path="/viewAppliedJobs" element={<ViewAppliedJobs />} />
+        <Route path="/jobalert" element={<JobAlert />} />
+        <Route path="/admindashboard" element={<AdminDashboard/>} />
       </Routes>
    
   );
