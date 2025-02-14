@@ -1,0 +1,97 @@
+/* Job Card Container */
+.job__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between cards */
+  justify-content: center;
+}
+
+/* Job Card Styling */
+.job__card {
+  width: 400px; /* Ensures it takes full column width */
+  max-width: 300px; /* Increased the card width */
+  height: 280px; /* Increased height for better readability */
+ 
+  padding: 20px; /* Adds space inside the card */
+  border-radius: 16px; /* Increased border radius for a modern look */
+  border: none;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background: linear-gradient(135deg, #ffffff 30%, #f8f9fa 100%);
+  margin-bottom: 20px; /* Adds spacing below each card */
+}
+
+/* Hover Effect */
+.job__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Job Title */
+.job__title {
+  font-size: 1.6rem; /* Increased font size */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Salary Styling */
+.job__salary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Job Info */
+.job__item-info {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Job Buttons */
+.job__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+/* Buttons */
+.job__btn {
+  padding: 10px 20px;
+  font-size: 1.1rem; /* Increased button size */
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.job__btn-link {
+  color: white;
+  text-decoration: none;
+}
+
+.job__btn:first-child {
+  background-color: #007bff;
+}
+
+.job__btn:first-child:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.job__btn:last-child {
+  background-color: #ffc107;
+}
+
+.job__btn:last-child:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .job__card {
+    max-width: 95%; /* Adjusts for smaller screens */
+    height: auto;
+  }
+}

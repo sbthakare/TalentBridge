@@ -1,0 +1,124 @@
+/* General Styles */
+.profile-container {
+  max-width: 750px;
+  background: #1e293b; /* Dark Blue Background */
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-container:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Title Styling */
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #facc15; /* Golden Yellow */
+  margin-bottom: 20px;
+}
+
+/* Form Section Titles */
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: #38bdf8; /* Sky Blue */
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 5px;
+}
+
+/* Form Labels */
+.profile-form label {
+  font-weight: bold;
+  color: #cbd5e1; /* Light Gray */
+}
+
+/* Form Inputs */
+.profile-form input,
+.profile-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  background: #b0b7c2; /* Dark Grayish Blue */
+  color: #020305; /* Light Text */
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-form input:focus,
+.profile-form select:focus {
+  outline: none;
+  box-shadow: 0px 0px 8px #facc15;
+}
+
+/* Button Styles */
+.btn {
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+}
+
+/* Edit Profile Button */
+.btn-warning {
+  background: #facc15; /* Golden Yellow */
+  color: #070a0e;
+  border: none;
+}
+
+.btn-warning:hover {
+  background: #fbbf24; /* Light Gold */
+  transform: scale(1.05);
+}
+
+/* Delete Profile Button */
+.btn-danger {
+  background: #ef4444; /* Bright Red */
+  color: #fff;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #dc2626; /* Darker Red */
+  transform: scale(1.05);
+}
+
+/* Save Button */
+.btn-success {
+  background: #22c55e; /* Green */
+  color: white;
+  border: none;
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-success:hover {
+  background: #16a34a; /* Dark Green */
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

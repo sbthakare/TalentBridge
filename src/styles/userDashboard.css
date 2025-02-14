@@ -1,0 +1,94 @@
+/* Navbar */
+.navbar {
+  background-color: #d85353;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-item {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-nav {
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover effect for View Applied Jobs & Job Alert */
+.nav-link:hover {
+  color: #ffcc00; /* Yellow highlight */
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
+/* Welcome Message */
+.welcome-message {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Search Job Section */
+.container h2 {
+  margin-bottom: 20px;
+}
+
+/* Removed Background */
+.search-container {
+  background: none;
+  padding: 0;
+}
+
+/* Search Input */
+.form-control {
+  width: 40%;
+  font-size: 16px;
+}
+
+/* Job Cards */
+.job-card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  padding: 15px;
+  background: white;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job-card:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .form-control {
+    width: 70%;
+  }
+
+  .job-card {
+    min-height: 200px;
+    padding: 10px;
+  }
+}

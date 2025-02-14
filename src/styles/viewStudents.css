@@ -1,0 +1,52 @@
+.view-students-container {
+    max-width: 900px;
+    margin: 80px auto 20px auto; /* Adds 100px space from the top */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.back-btn {
+    margin-bottom: 15px;
+}
+
+.candidate-search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+}
+
+.search-btn {
+    min-width: 100px;
+}
+
+.table {
+    background-color: white;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+}
+
+.btn-success, .btn-danger {
+    text-align: center;
+    width: 80px; /* Reduce button width */
+    padding: 5px 10px; /* Adjust padding for a smaller button */
+    font-size: 14px; /* Reduce font size */
+}
